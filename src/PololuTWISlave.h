@@ -32,6 +32,7 @@ public:
   /* Initialize slave on a specific address; do not respond to general calls. */
   static void init(uint8_t address, PololuTWISlave &slave);
 
+//protected:
   /* Low-level static methods not meant to be called by users. */
   static uint8_t handleEvent(uint8_t event);
   static void ack();
